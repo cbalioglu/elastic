@@ -1,5 +1,3 @@
-#!/usr/bin/env/python3
-
 # Copyright (c) Facebook, Inc. and its affiliates.
 # All rights reserved.
 #
@@ -102,13 +100,14 @@ process:
 """
 
 from .api import (  # noqa: F401
-    RendezvousClosedException,
-    RendezvousException,
+    RendezvousClosedError,
+    RendezvousConnectionError,
+    RendezvousError,
     RendezvousHandler,
     RendezvousHandlerFactory,
-    RendezvousNonRetryableError,
     RendezvousParameters,
-    RendezvousTimeoutException,
+    RendezvousStateError,
+    RendezvousTimeoutError,
 )
 
 
